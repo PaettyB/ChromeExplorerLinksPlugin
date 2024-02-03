@@ -16,12 +16,11 @@ def main():
         path = path[1:]
     path = path.replace("%20", " ")
     path = path.replace("/", "\\")
-    
+    path = path.replace('"', "")
     launchString = 'explorer "' + path + '"'
-    print(launchString)
+    # print(launchString)
     subprocess.Popen(launchString)
     time.sleep(3)
-    a = input("A:")
 
 
 

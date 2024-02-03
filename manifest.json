@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Explorer Links",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "explorer_icon.png"
+  }, 
+  "content_scripts": [
+    {
+      "js": ["scripts/addButton.js"],
+      "matches": [
+        "file:///*"
+      ]
+    }
+  ]
+}

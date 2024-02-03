@@ -18,9 +18,10 @@ def main():
     path = path.replace("/", "\\")
     
     launchString = 'explorer "' + path + '"'
-    # print(launchString)
+    print(launchString)
     subprocess.Popen(launchString)
     time.sleep(3)
+    a = input("A:")
 
 
 
